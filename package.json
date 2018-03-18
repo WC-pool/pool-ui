@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/WC-pool/pool-ui/issues"
   },
-  "homepage": "https://github.com/WC-pool/pool-ui#readme"
+  "homepage": "https://github.com/WC-pool/pool-ui#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "firebase": "^4.11.0",
+    "lodash": "^4.17.5",
+    "react": "^16.2.0"
+  }
 }
