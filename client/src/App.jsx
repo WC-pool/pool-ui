@@ -10,13 +10,35 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-
+    firebase.auth().onAuthStateChanged(async (user) => {
+      try {
+        if (user) {
+          
+        } else {
+          localStorage.clear(); 
+        }
+      } catch(err) {
+        console.log('Error', err)
+      }
+    });      
   } 
 
   render() {
     return(
       <Provider store={this.props.store}>
-      
+        <BrowserRouter>
+          <div>
+            <Route path="/" component={}  />
+            <Switch>
+            <Route path="/login" component={} />
+
+            <Route path="/news" component={} />
+            <Route path="/picks" component={} />
+            <Route path="/chat" component={} />
+
+            </Switch>
+          </div>
+        </BrowserRouter>
       </Provider>
     )
   }

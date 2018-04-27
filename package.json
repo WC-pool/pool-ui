@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildEnv": "node bin/buildEnv.js"
+    "buildEnv": "node bin/buildEnv.js",
+    "build": "cd client && npm run build",
+    "setup:server": "cd server && npm install",
+    "setup:client": "cd client && npm install",
+    "start:server": "cd server && npm run start && npm run build"
   },
   "repository": {
     "type": "git",
