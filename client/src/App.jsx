@@ -17,7 +17,7 @@ class App extends React.Component {
         } else {
           localStorage.clear(); 
         }
-      } catch(err) {
+      } catch (err) {
         console.log('Error', err)
       }
     });      

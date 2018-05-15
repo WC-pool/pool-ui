@@ -10,6 +10,6 @@ class NavBar extends React.component {
   }
 
   render() {
-    
+    <h4>NavBar</h4>
   }
 }
