@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js[x]?$/,
         exclude: /node_modules/,
@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        loaders: ['style-loader', 'css-loader'],
+        rules: [{loader: ['css-loader', 'style-loader']}],
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,

@@ -28,14 +28,15 @@ class App extends React.Component {
       <Provider store={this.props.store}>
         <BrowserRouter>
           <div>
-            <Route path="/" component={}  />
+            <Route path="/" component={NavBar}  />
             <Switch>
-            <Route path="/login" component={} />
+            <Route path="/login" component={Login} />
 
-            <Route path="/news" component={} />
-            <Route path="/picks" component={} />
-            <Route path="/chat" component={} />
-
+            <Route path="/news" component={News} />
+            <Route path="/picks" component={Picks} />
+            <Route path="/chat" component={Chat} />
+            <Route path="/setPicks" component={setPicks} />
+            <Route path="/" component={Home} />
             </Switch>
           </div>
         </BrowserRouter>

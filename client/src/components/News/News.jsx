@@ -11,3 +11,5 @@ class News extends React.Component {
     <h4>News</h4>
   }
 }
+
+export default News;

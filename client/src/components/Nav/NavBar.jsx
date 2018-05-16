@@ -13,3 +13,5 @@ class NavBar extends React.component {
     <h4>NavBar</h4>
   }
 }
+
+export default NavBar;

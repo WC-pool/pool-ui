@@ -12,3 +12,5 @@ class Home extends React.component {
     
   }
 }
+
+export default Home;ß

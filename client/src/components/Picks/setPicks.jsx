@@ -3,7 +3,7 @@ import React from 'react';
 import axios from 'axios';
 
 
-class createPicks extends React.Component {
+class setPicks extends React.Component {
   constructor () {
 
   }
@@ -12,3 +12,5 @@ class createPicks extends React.Component {
     <h4>createPicks</h4>
   }
 }
+
+export default setPicks;

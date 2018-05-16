@@ -10,3 +10,5 @@ class Picks extends React.Component {
     <h4>Picks</h4>
   }
 }
+
+export default Picks;
