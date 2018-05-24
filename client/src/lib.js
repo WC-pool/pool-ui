@@ -1,7 +1,7 @@
-import firebase from 'firebase'
+import firebase from 'firebase';
 
 var config = {
-  apiKey: JSON.stringify(process.env.FIREBASE_API_KEY),
+  apiKey: 'AIzaSyB-3KmGAjS8bMLWRGpor2FOZNUosNh5F7o',
   authDomain: "wayfare-8e106.firebaseapp.com",
   projectId: "wayfare-8e106"
 };

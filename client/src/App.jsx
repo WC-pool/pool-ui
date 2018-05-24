@@ -4,6 +4,16 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { Provider, connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import firebase from './lib.js';
+import NavBar from '../src/components/Nav/NavBar';
+import Login from '../src/components/Auth/Login';
+import Signup from '../src/components/Auth/Signup';
+import News from '../src/components/News/News';
+import Picks from '../src/components/Picks/Picks';
+import setPicks from '../src/components/Picks/setPicks';
+import Chat from '../src/components/Chat/Chat';
+import Home from '../src/components/Home/Home';
+
 class App extends React.Component {
   constructor (props) {
     super (props)
@@ -31,7 +41,7 @@ class App extends React.Component {
             <Route path="/" component={NavBar}  />
             <Switch>
             <Route path="/login" component={Login} />
-
+            <Route path="signup" component={Signup} />
             <Route path="/news" component={News} />
             <Route path="/picks" component={Picks} />
             <Route path="/chat" component={Chat} />
@@ -49,4 +59,4 @@ class App extends React.Component {
 
 
 
-import firebase from './lib.js';
+export default App;

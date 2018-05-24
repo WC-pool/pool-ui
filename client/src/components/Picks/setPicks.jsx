@@ -5,7 +5,7 @@ import axios from 'axios';
 
 class setPicks extends React.Component {
   constructor () {
-
+    super()
   }
 
   render () {

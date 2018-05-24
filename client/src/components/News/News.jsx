@@ -4,7 +4,8 @@ import React from 'react';
 
 class News extends React.Component {
   constructor() {
-
+    super()
+    
   }
 
   render() {
