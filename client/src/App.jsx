@@ -46,7 +46,7 @@ class App extends React.Component {
             <Route path="/picks" component={Picks} />
             <Route path="/chat" component={Chat} />
             <Route path="/setPicks" component={setPicks} />
-            <Route path="/" component={Home} />
+            {/*<Route path="/" component={Home} />*/}
             </Switch>
           </div>
         </BrowserRouter>
