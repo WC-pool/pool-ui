@@ -7,7 +7,7 @@ class Picks extends React.Component {
   }
 
   render () {
-    <h4>Picks</h4>
+    return (<h4>Picks</h4>)
   }
 }
 

@@ -7,7 +7,7 @@ class Chat extends React.Component {
   }
 
   render() {
-   <h4>Chat</h4>
+   return (<h4>Chat</h4>)
   }
 }
 export default Chat;

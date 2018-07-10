@@ -9,7 +9,7 @@ class News extends React.Component {
   }
 
   render() {
-    <h4>News</h4>
+    return (<h4>News</h4>)
   }
 }
 
