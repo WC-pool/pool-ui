@@ -9,7 +9,7 @@ class setPicks extends React.Component {
   }
 
   render () {
-    <h4>createPicks</h4>
+    return (<h4>createPicks</h4>)
   }
 }
 

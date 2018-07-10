@@ -1,5 +1,7 @@
 import 'babel-polyfill';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Groups from './WCgroups.jsx';
 
 class Picks extends React.Component {
   constructor() {
@@ -9,72 +11,13 @@ class Picks extends React.Component {
   render () {
     return (
       <div>
-        <h4>World Cup Groups</h4>
-        <div> Group A
-          <ul>
-            <li>Uruguay</li>
-            <li>Russia</li>
-            <li>Saudi Arabia</li>
-            <li>Egypt</li>
-          </ul>
-        </div>
-        <div> Group B
-          <ul>
-            <li>Spain</li>
-            <li>Portugal</li>
-            <li>Iran</li>
-            <li>Morocco</li>
-          </ul>
-        </div>
-        <div> Group C
-          <ul>
-            <li>France</li>
-            <li>Denmark</li>
-            <li>Peru</li>
-            <li>Australia</li>
-          </ul>
-        </div>
-        <div> Group D
-          <ul>
-            <li>Croatia</li>
-            <li>Argentina</li>
-            <li>Nigeria</li>
-            <li>Iceland</li>
-          </ul>
-        </div>
-        <div> Group E
-          <ul>
-            <li>Brazil</li>
-            <li>Switzerland</li>
-            <li>Serbia</li>
-            <li>Costa Rica</li>
-          </ul>
-        </div>
-        <div> Group F
-          <ul>
-            <li>Sweden</li>
-            <li>Mexico</li>
-            <li>South Korea</li>
-            <li>Germany</li>
-          </ul>
-        </div>
-        <div> Group G
-          <ul>
-            <li>Belgium</li>
-            <li>England</li>
-            <li>Tunisia</li>
-            <li>Panama</li>
-          </ul>
-        </div>
-        <div> Group H
-          <ul>
-            <li>Colombia</li>
-            <li>Japan</li>
-            <li>Senegal</li>
-            <li>Poland</li>
-          </ul>
-        </div>
-
+       
+      <h4>World Cup Groups</h4>
+        
+        <Link to='/setPicks'><button>Create Picks</button></Link>
+        <br />
+        
+      <Groups />
       </div>
     )
   }

@@ -26,6 +26,7 @@ class Home extends React.Component {
           <Link to='/chat'><button>Chat</button></Link>
 
         </span>
+        <hr />
       </div>
     )
   }
