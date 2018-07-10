@@ -15,9 +15,13 @@ class Picks extends React.Component {
       <h4>World Cup Groups</h4>
         
         <Link to='/setPicks'><button>Create Picks</button></Link>
+        <a href='#picks'><button>See All Picks</button></a>
         <br />
         
-      <Groups />
+        <Groups />
+        <div id='picks'>
+        all picks
+        </div>
       </div>
     )
   }
