@@ -1,5 +1,7 @@
 import 'babel-polyfill';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PicksListEntry from './picksListEntry.jsx';
 
 
 class PicksList extends React.Component {
@@ -9,12 +11,23 @@ class PicksList extends React.Component {
   }
 
   render () {
-    return (
-      <div>
-      {console.log('nationWIDE', this.props.list)}
-      </div>
-    )
-  }
+  
+  if (this.props.list === null) {
+    return (<div>
+          Loading Picks
+        </div>)
+  } else{
+    return this.props.list.data.rows.map( set => {
+      return (
+       <div key={set.id} >
+        <PicksListEntry set={set} />
+       </div>
+      )
+    })
+
+    } 
+  }  
 }
+
 
 export default PicksList;
