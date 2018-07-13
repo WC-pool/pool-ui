@@ -25,7 +25,7 @@ class setPicks extends React.Component {
   }
 
   async submitPicksHandler () {
-    console.log('inside submit', this.state.id)
+    console.log('inside NAME', localStorage.getItem('name'))
     let name = document.getElementById('name').value;
     let Awinner = document.getElementById('Awinner').value;
     let Arunner = document.getElementById('Arunner').value;
@@ -48,6 +48,7 @@ class setPicks extends React.Component {
       let payload = {
         name: name,
         picker: this.state.id,
+        pickername: localStorage.getItem('name').split(' ')[0],
         Awinner: Awinner,
         Arunner: Arunner,
         Bwinner: Bwinner,
