@@ -33,6 +33,7 @@ class Picks extends React.Component {
         
         <Groups />
         <div id='picks'>
+        <h4>ALL PICKS</h4>
         <PicksList list={this.state.picksArr}/>
         </div>
       </div>

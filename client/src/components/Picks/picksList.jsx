@@ -19,7 +19,7 @@ class PicksList extends React.Component {
   } else{
     return this.props.list.data.rows.map( set => {
       return (
-       <div key={set.id} >
+        <div key={set.id} >
         <PicksListEntry set={set} />
        </div>
       )

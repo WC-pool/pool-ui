@@ -13,7 +13,11 @@ class picksListEntry extends React.Component {
   render () {
     return (
       <div>
-      {console.log(this.props.set)}
+      
+      <div>User: {this.props.set.pickername}</div>
+      <div>Picks name: {this.props.set.name}</div>
+    
+      <hr />
       </div>
     )
   }
