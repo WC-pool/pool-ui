@@ -13,6 +13,7 @@ import Picks from '../src/components/Picks/Picks';
 import setPicks from '../src/components/Picks/setPicks';
 import Chat from '../src/components/Chat/Chat';
 import Home from '../src/components/Home/Home';
+import indvlSet from '../src/components/Picks/indvlSet';
 
 class App extends React.Component {
   constructor (props) {
@@ -46,7 +47,7 @@ class App extends React.Component {
             <Route path="/picks" component={Picks} />
             <Route path="/chat" component={Chat} />
             <Route path="/setPicks" component={setPicks} />
-            {/*<Route path="/" component={Home} />*/}
+            <Route path="/indvlSet/:id" component={indvlSet} />
             </Switch>
           </div>
         </BrowserRouter>

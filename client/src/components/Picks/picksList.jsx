@@ -16,11 +16,11 @@ class PicksList extends React.Component {
     return (<div>
           Loading Picks
         </div>)
-  } else{
+  } else {
     return this.props.list.data.rows.map( set => {
       return (
         <div key={set.id} >
-        <PicksListEntry set={set} />
+        <Link to={`/indvlSet/${set.id}`}><PicksListEntry set={set} /></Link>
        </div>
       )
     })
