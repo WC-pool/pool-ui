@@ -27,6 +27,7 @@ class Chat extends React.Component {
 
     try {
       const data = await axios.get(`${url.socketServer}/api/chat/getMessages`);
+      console.log('the mezzages', data)
     } catch (err) {
       console.log('Error getting messages', err);
     }
@@ -50,6 +51,8 @@ class Chat extends React.Component {
       message: this.state.message,
       userId: localStorage.getItem('activeUid')
     })
+
+    this.setState({message: ''});
     
   }
 
@@ -61,7 +64,7 @@ class Chat extends React.Component {
     </div>
     <div>
     <input type='text' placeholder='Talk Smack!' onChange={e => this.setState({message: e.target.value})}/>
-    <button onClick={(e) => this.sendMessage}>Send</button>
+    <button onClick={(e) => this.sendMessage(e)}>Send</button>
     </div>
     {console.log('sockit to me',this.state.socket)}
     </div>)
