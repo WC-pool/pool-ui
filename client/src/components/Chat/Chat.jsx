@@ -21,13 +21,13 @@ class Chat extends React.Component {
 
   async componentWillMount () {
 
-    const socket = io(`${url.socketServer}`);
+    const socket = io(`${url.socketServer}`)
 
     this.setState({socket: socket});    
 
     try {
       const data = await axios.get(`${url.socketServer}/api/chat/getMessages`);
-      console.log('the mezzages', data)
+      
     } catch (err) {
       console.log('Error getting messages', err);
     }
@@ -38,6 +38,21 @@ class Chat extends React.Component {
 
     socket.on('server.initialState', () => {
       this.setState({socket});
+    })
+
+    socket.on('server.message', async (data) => {
+      try {
+        const lastmessage = await axios.get(`${url.socketServer}/api/chat/getLastMessage`)
+         this.setState({
+          messages: [...this.state.messages, lastmessage.data[0]]
+        })
+        
+        let chatBox = document.getElementById('chat-messages');
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+      catch (err) {
+        console.log('couldnt get last message', err)
+      }
     })
 
 
