@@ -3,7 +3,7 @@ import React from 'react';
 import axios from 'axios';
 import url from '../../config';
 import io from 'socket.io-client';
-import { MessageEntry } from './MessageEntry';
+import MessageEntry from './MessageEntry';
 
 
 class Chat extends React.Component {
@@ -90,7 +90,7 @@ class Chat extends React.Component {
       <ul>
         {!this.state.messages > 0 ? null : 
         this.state.messages.map((message, i, userId, userName) => {
-          return <MessageEntry key={i} message={message} userId={userId} userName={userName}/>
+          return <MessageEntry key={i} message={message} userId={userId} userName={userName} />
           })
         }
       </ul>

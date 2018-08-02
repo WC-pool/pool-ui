@@ -8,7 +8,31 @@ class MessageEntry extends React.Component {
   }
 
   render () {
-    
+    const { message } = this.props;
+    return (
+      localStorage.getItem('activeUid') !== message.userId ?
+      <li>
+        <div >
+          <div>
+            <p>{message.userName}</p>
+          </div>
+          <div>
+            <p>{message.message}</p>
+          </div>
+        </div>
+      </li>
+      :
+      <li>
+        <div >
+          <div>
+            <p>{message.userName}</p>
+          </div>
+          <div>
+            <p>{message.message}</p>
+          </div>
+        </div>
+      </li>
+    )
   }
 };
 
