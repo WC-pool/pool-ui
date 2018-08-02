@@ -27,7 +27,19 @@ class Chat extends React.Component {
 
     try {
       const data = await axios.get(`${url.socketServer}/api/chat/getMessages`);
+      console.log('mezzages', data.data)
       
+      let chatBox = document.getElementById('chat-messages');
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      try {
+        await this.setState({
+          messages: data.data.reverse()
+        })
+      } catch (err) {
+        console.log('couldnt set state - messages: ', err);
+      }
+
     } catch (err) {
       console.log('Error getting messages', err);
     }
@@ -74,8 +86,14 @@ class Chat extends React.Component {
   render() {
    return (<div>
     <h4>Chat</h4>
-    <div>
-    
+    <div className='chat-messages' id='chat-messages'>
+      <ul>
+        {!this.state.messages > 0 ? null : 
+        this.state.messages.map((message, i, userId, userName) => {
+          return <MessageEntry key={i} message={message} userId={userId} userName={userName}/>
+          })
+        }
+      </ul>
     </div>
     <div>
     <input type='text' placeholder='Talk Smack!' onChange={e => this.setState({message: e.target.value})}/>
