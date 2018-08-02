@@ -67,6 +67,9 @@ class Chat extends React.Component {
       }
     })
 
+    let chatBox = document.getElementById('chat-messages');
+    chatBox.scrollTop = chatBox.scrollHeight;
+
 
   }
 
