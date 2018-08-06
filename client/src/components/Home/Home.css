@@ -2,16 +2,43 @@
 
 
 .jumbo {
-  background: url('https://www.avioncommunications.com.au/wp-content/uploads/2014/07/World-Cup-panorama.png');
-  height: 340px;
-  width: 1000px;
+  background: url('https://i2.wp.com/www.p4panorama.com/wp-content/uploads/2017/09/Moscow-Virtual-Reality-Tour.jpg?resize=1440%2C600') repeat center center;
+  
+
   display: block;
   margin: 0 auto;
 }
 
 .title{
   text-align: center;
-  padding-top: 125px;
+  padding-top: 15px;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px 5px white;
 }
+
+.centerbtns {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn-lg {
+  margin: 0 auto;
+  
+  
+}
+/* .newsbtn {
+ 
+  font-family: 'Permanent Marker', cursive;
+}
+
+.picksbtn {
+ 
+  font-family: 'Permanent Marker', cursive;
+}
+
+.chatbtn {
+  
+  font-family: 'Permanent Marker', cursive;
+} */
 
 

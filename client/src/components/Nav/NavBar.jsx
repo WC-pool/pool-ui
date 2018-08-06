@@ -5,6 +5,7 @@ import axios from 'axios';
 import url from '../../config';
 import firebase from 'firebase';
 import Home from '../Home/Home';
+import './NavBar.css'
 
 class NavBar extends React.Component {
   constructor() {
@@ -45,8 +46,9 @@ class NavBar extends React.Component {
         </div>
         :
         <div>
-          <div>
-          <button onClick={this.onLogoutHandler.bind(this)}>Logout</button>
+          <div className='row '>
+          <h4 id='greeting'>Welcome, {localStorage.getItem('name')}</h4>
+          <div className='logout'><button type='button' className='btn btn-outline-danger'onClick={this.onLogoutHandler.bind(this)}>Logout</button></div>
           </div>
           <div>
           <Home />

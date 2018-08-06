@@ -17,21 +17,23 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        <h4>Welcome, {localStorage.getItem('name')}</h4>
+      <div className='home'>
+        
         <br />
-        <div className='jumbo'>
-          <div className='title containers text-center'>
-            <h1>World Cup Pool 2018</h1>
+        <span>
+        <div className='row centerbtns'>
+        <div className='navbtn'><Link to='/news'><button type="button" className="btn btn-light btn-lg btn-block">News</button></Link></div>
+        <div className='navbtn'><Link to='/picks'><button type="button" className="btn btn-primary btn-lg btn-block">Picks</button></Link></div>
+        <div className='navbtn'><Link to='/chat'><button type="button" className="btn btn-danger btn-lg btn-block">Chat</button></Link></div>
+        </div>
+      </span>
+        <div className='jumbotron jumbotron-fluid jumbo'>
+          <div className='title container text-center'>
+            <h1 className='display-4'>World Cup Pool 2018</h1>
           </div>
         </div>
         <br />
-        <span>
-          <Link to='/news'><button>News</button></Link>
-          <Link to='/picks'><button>Picks</button></Link>
-          <Link to='/chat'><button>Chat</button></Link>
-
-        </span>
+        
         <hr />
       </div>
     )

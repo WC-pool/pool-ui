@@ -1,0 +1,9 @@
+.logout {
+  float: right;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+#greeting {
+  float: left;
+}
