@@ -60,8 +60,8 @@ class Login extends React.Component {
       <div>
         <h4>Login</h4>
       </div>
-      <div>{console.log('url', url.restServer)}</div>
-      <div>
+      
+      <div className='google'>
         <button onClick={this.onGoogleClickHandler.bind(this)}>Google</button>
       </div>
     </div>)

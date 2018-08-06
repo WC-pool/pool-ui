@@ -5,6 +5,7 @@ import axios from 'axios';
 import Chat from '../Chat/Chat.jsx';
 import News from '../News/News.jsx';
 import Picks from '../Picks/Picks.jsx';
+import './Home.css';
 
 class Home extends React.Component {
   constructor(props) {
@@ -19,6 +20,11 @@ class Home extends React.Component {
       <div>
         <h4>Welcome, {localStorage.getItem('name')}</h4>
         <br />
+        <div className='jumbo'>
+          <div className='title containers text-center'>
+            <h1>World Cup Pool 2018</h1>
+          </div>
+        </div>
         <br />
         <span>
           <Link to='/news'><button>News</button></Link>

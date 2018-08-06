@@ -1,0 +1,17 @@
+
+
+
+.jumbo {
+  background: url('https://www.avioncommunications.com.au/wp-content/uploads/2014/07/World-Cup-panorama.png');
+  height: 340px;
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+.title{
+  text-align: center;
+  padding-top: 125px;
+}
+
+
