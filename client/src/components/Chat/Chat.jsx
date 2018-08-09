@@ -4,6 +4,7 @@ import axios from 'axios';
 import url from '../../config';
 import io from 'socket.io-client';
 import MessageEntry from './MessageEntry';
+import './Chat.css';
 
 
 class Chat extends React.Component {
@@ -88,7 +89,7 @@ class Chat extends React.Component {
 
   render() {
    return (<div>
-    <h4>Chat</h4>
+    <h4>Message Board</h4>
     <div className='chat-messages' id='chat-messages'>
       <ul>
         {!this.state.messages > 0 ? null : 
@@ -98,7 +99,7 @@ class Chat extends React.Component {
         }
       </ul>
     </div>
-    <div>
+    <div className='chatinput'>
     <input type='text' placeholder='Talk Smack!' onChange={e => this.setState({message: e.target.value})}/>
     <button onClick={(e) => this.sendMessage(e)}>Send</button>
     </div>

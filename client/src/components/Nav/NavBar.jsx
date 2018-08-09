@@ -47,7 +47,7 @@ class NavBar extends React.Component {
         :
         <div>
           <div className='row '>
-          <h4 id='greeting'>Welcome, {localStorage.getItem('name')}</h4>
+          <div><h4 id='greeting'>Welcome, {localStorage.getItem('name')}</h4></div>
           <div className='logout'><button type='button' className='btn btn-outline-danger'onClick={this.onLogoutHandler.bind(this)}>Logout</button></div>
           </div>
           <div>
