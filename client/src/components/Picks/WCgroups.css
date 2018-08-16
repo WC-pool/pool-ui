@@ -1,0 +1,9 @@
+.groups {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}

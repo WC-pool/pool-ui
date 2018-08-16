@@ -29,6 +29,7 @@ class Login extends React.Component {
         image: authData.user.photoURL
       }
       try {
+        console.log('REST SERVA: ', url.restServer)
         const data = await axios.post(`${url.restServer}/api/auth/signup`, payload)
         try {
            const userData = await axios.get(`${url.restServer}/api/users/getUser`, {params: {uid: localStorage.getItem('activeUid')}})

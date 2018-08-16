@@ -1,13 +1,14 @@
 import 'babel-polyfill';
 import React from 'react';
 import axios from 'axios';
+import './WCgroups.css';
 
 class Groups extends React.Component {
 
   render () {
     return (
-      <div>
-        <div> Group A
+      <div className='groups'>
+        <div className='group A'> Group A
         <ul>
           <li>Uruguay</li>
           <li>Russia</li>
@@ -15,7 +16,7 @@ class Groups extends React.Component {
           <li>Egypt</li>
         </ul>
       </div>
-      <div> Group B
+      <div className='group B'> Group B
         <ul>
           <li>Spain</li>
           <li>Portugal</li>
@@ -23,7 +24,7 @@ class Groups extends React.Component {
           <li>Morocco</li>
         </ul>
       </div>
-      <div> Group C
+      <div className='group C'> Group C
         <ul>
           <li>France</li>
           <li>Denmark</li>
@@ -31,7 +32,7 @@ class Groups extends React.Component {
           <li>Australia</li>
         </ul>
       </div>
-      <div> Group D
+      <div className='group D'> Group D
         <ul>
           <li>Croatia</li>
           <li>Argentina</li>
@@ -39,7 +40,7 @@ class Groups extends React.Component {
           <li>Iceland</li>
         </ul>
       </div>
-      <div> Group E
+      <div className='group E'> Group E
         <ul>
           <li>Brazil</li>
           <li>Switzerland</li>
@@ -47,7 +48,7 @@ class Groups extends React.Component {
           <li>Costa Rica</li>
         </ul>
       </div>
-      <div> Group F
+      <div className='group F'> Group F
         <ul>
           <li>Sweden</li>
           <li>Mexico</li>
@@ -55,7 +56,7 @@ class Groups extends React.Component {
           <li>Germany</li>
         </ul>
       </div>
-      <div> Group G
+      <div className='group G'> Group G
         <ul>
           <li>Belgium</li>
           <li>England</li>
@@ -63,7 +64,7 @@ class Groups extends React.Component {
           <li>Panama</li>
         </ul>
       </div>
-      <div> Group H
+      <div className='group H'>  Group H
         <ul>
           <li>Colombia</li>
           <li>Japan</li>

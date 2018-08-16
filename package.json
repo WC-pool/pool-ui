@@ -9,7 +9,7 @@
     "build": "cd client && npm run build",
     "setup:server": "cd server && npm install",
     "setup:client": "cd client && npm install",
-    "start:server": "cd server && npm run start && npm run build"
+    "start:server": "cd server && npm run start"
   },
   "repository": {
     "type": "git",
